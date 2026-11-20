@@ -1,0 +1,13 @@
+{
+  "name": "parknest-admin-root",
+  "version": "1.0.0",
+  "scripts": {
+    "server-install": "cd server && npm install",
+    "client-install": "cd client && npm install",
+    "install-all": "npm run server-install && npm run client-install",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "simulate": "cd server && npm run simulate:sensors",
+    "seed": "cd server && npm run seed"
+  }
+}
