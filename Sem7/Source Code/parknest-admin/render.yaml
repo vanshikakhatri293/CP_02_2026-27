@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: parknest-backend
+    env: node
+    region: singapore
+    plan: free
+    rootDir: parknest-admin/server
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: CLIENT_URL
+        sync: false
+      - key: PORT
+        value: 10000
